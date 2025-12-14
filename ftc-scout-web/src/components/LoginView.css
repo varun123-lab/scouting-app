@@ -1,0 +1,37 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--shadow-heavy);
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 0.5rem;
+  color: var(--accent-blue);
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}

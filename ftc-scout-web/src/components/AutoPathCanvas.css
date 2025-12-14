@@ -1,0 +1,36 @@
+.auto-path-canvas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auto-path-canvas {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: crosshair;
+  touch-action: none;
+  max-width: 100%;
+  height: auto;
+  background-color: var(--bg-tertiary);
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .auto-path-canvas {
+    width: 100%;
+  }
+  
+  .canvas-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .canvas-controls button {
+    flex: 1;
+  }
+}
